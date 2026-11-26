@@ -1,0 +1,1016 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover Data Analysis through beginner-friendly examples, practical tools, projects and career opportunities.">
+
+    <title>Data Analytics | Learn Data Analysis</title>
+
+    <link rel="stylesheet" href="mystyle.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            DATA<span>FLOW</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navMenu">
+            <a href="#about">Introduction</a>
+            <a href="#process">How It Works</a>
+            <a href="#tools">Tools</a>
+            <a href="#course">Course</a>
+            <a href="#project">Student Project</a>
+            <a href="#careers">Career Scope</a>
+        </nav>
+
+        <a href="#course" class="nav-btn">Explore Course <i class="fa-solid fa-arrow-right"></i></a>
+
+    </div>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <span class="eyebrow">
+                <i class="fa-solid fa-chart-line"></i>
+                BEGINNER FRIENDLY LEARNING
+            </span>
+
+            <h1>
+                Turn Data Into
+                <span>Meaningful Insights.</span>
+            </h1>
+
+            <p>
+                Discover how businesses use information to make better decisions.
+                Start your Data Analysis journey with simple concepts, practical
+                examples and industry-relevant tools.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">
+                    Discover Data Analysis
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#project" class="btn btn-outline">
+                    View Student Project
+                </a>
+            </div>
+
+            <div class="hero-info">
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    No IT background required
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Learn step by step
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- HERO CHART CARD -->
+        <div class="hero-dashboard reveal">
+
+            <div class="dashboard-top">
+                <div>
+                    <span class="dashboard-label">SAMPLE ANALYTICS</span>
+                    <h3>Sales Overview</h3>
+                </div>
+
+                <span class="live-dot">● Demo Data</span>
+            </div>
+
+            <div class="dashboard-number">
+                <span>Total Sales</span>
+                <h2>₹4,600</h2>
+                <small>Illustrative stationery shop example</small>
+            </div>
+
+            <div class="hero-chart">
+                <canvas id="heroChart"></canvas>
+            </div>
+
+            <div class="dashboard-bottom">
+                <span><i class="fa-solid fa-chart-simple"></i> Product Performance</span>
+                <span>Sample Dataset</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+<section class="section" id="about">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-tag">01 / THE BASICS</span>
+            <h2>What is <span>Data Analysis?</span></h2>
+            <p>
+                You don't need to be a programmer to understand Data Analysis.
+                You already use its basic idea in everyday life.
+            </p>
+        </div>
+
+
+        <div class="intro-grid">
+
+            <div class="intro-text reveal">
+
+                <h3>Let's understand it simply.</h3>
+
+                <p>
+                    <strong>Data</strong> means information.
+                    <strong>Analysis</strong> means examining something carefully.
+                </p>
+
+                <p>
+                    Data Analysis is the process of collecting, organizing and
+                    studying information to discover useful answers and make
+                    better decisions.
+                </p>
+
+                <div class="highlight-box">
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <div>
+                        <strong>Simple example</strong>
+                        <p>
+                            Before buying a mobile phone, you compare prices,
+                            battery life, camera quality and customer reviews.
+                            You study information before making a decision.
+                            That is a basic example of data analysis.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="intro-cards reveal">
+
+                <div class="mini-card">
+                    <div class="mini-icon blue">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div>
+                        <h4>Raw Data</h4>
+                        <p>
+                            Unorganized information such as bills,
+                            marks, customer details or sales records.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mini-card">
+                    <div class="mini-icon purple">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <div>
+                        <h4>Analysis</h4>
+                        <p>
+                            Examining information, comparing values
+                            and finding patterns.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mini-card">
+                    <div class="mini-icon green">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div>
+                        <h4>Useful Insights</h4>
+                        <p>
+                            Understanding the results and using them
+                            to make informed decisions.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section class="section section-light" id="process">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-tag">02 / THE PROCESS</span>
+            <h2>How Does Data Analysis <span>Work?</span></h2>
+            <p>
+                Let's imagine a stationery shop wants to understand
+                its sales performance.
+            </p>
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-card reveal">
+                <span class="process-number">01</span>
+                <div class="process-icon">
+                    <i class="fa-solid fa-folder-open"></i>
+                </div>
+                <h3>Collect Data</h3>
+                <p>
+                    Gather information from sales bills, customer orders
+                    or daily business records.
+                </p>
+            </div>
+
+            <div class="process-card reveal">
+                <span class="process-number">02</span>
+                <div class="process-icon">
+                    <i class="fa-solid fa-broom"></i>
+                </div>
+                <h3>Clean Data</h3>
+                <p>
+                    Correct errors, organize records and check for
+                    missing or duplicate information.
+                </p>
+            </div>
+
+            <div class="process-card reveal">
+                <span class="process-number">03</span>
+                <div class="process-icon">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <h3>Analyze Data</h3>
+                <p>
+                    Calculate totals, compare products and identify
+                    useful patterns.
+                </p>
+            </div>
+
+            <div class="process-card reveal">
+                <span class="process-number">04</span>
+                <div class="process-icon">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+                <h3>Present Results</h3>
+                <p>
+                    Create charts, reports and dashboards to explain
+                    what the information tells us.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="process-note reveal">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>
+                <strong>Remember:</strong> The purpose is not just to calculate
+                numbers. It is to understand what those numbers mean.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTERACTIVE SAMPLE DATA -->
+<section class="section" id="example">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-tag">03 / PRACTICAL EXAMPLE</span>
+            <h2>Let's Explore a <span>Sales Dataset.</span></h2>
+            <p>
+                Imagine you are analyzing the sales of a small stationery shop.
+                Look at the sample records below.
+            </p>
+        </div>
+
+
+        <div class="analysis-layout">
+
+            <div class="data-panel reveal">
+
+                <div class="panel-heading">
+                    <div>
+                        <h3>Stationery Shop Sales</h3>
+                        <p>Illustrative sample records</p>
+                    </div>
+
+                    <span class="data-badge">Sample Data</span>
+                </div>
+
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Sales</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Notebook</td>
+                                <td>20</td>
+                                <td>₹50</td>
+                                <td>₹1,000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Pen</td>
+                                <td>35</td>
+                                <td>₹20</td>
+                                <td>₹700</td>
+                            </tr>
+
+                            <tr>
+                                <td>School Bag</td>
+                                <td>5</td>
+                                <td>₹500</td>
+                                <td>₹2,500</td>
+                            </tr>
+
+                            <tr>
+                                <td>Pencil</td>
+                                <td>40</td>
+                                <td>₹10</td>
+                                <td>₹400</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="data-insight">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <div>
+                        <strong>What can we discover?</strong>
+                        <p>
+                            Pencils sold the highest number of units,
+                            but school bags generated the highest sales amount.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="chart-panel reveal">
+
+                <div class="panel-heading">
+                    <div>
+                        <h3>Product Sales Comparison</h3>
+                        <p>Sales amount in rupees</p>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="salesChart"></canvas>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="insight-cards">
+
+            <div class="insight-card reveal">
+                <span>Total Sales</span>
+                <h3>₹4,600</h3>
+                <small>Combined sales of all products</small>
+            </div>
+
+            <div class="insight-card reveal">
+                <span>Highest Units Sold</span>
+                <h3>40</h3>
+                <small>Pencil</small>
+            </div>
+
+            <div class="insight-card reveal">
+                <span>Highest Sales Amount</span>
+                <h3>₹2,500</h3>
+                <small>School Bag</small>
+            </div>
+
+        </div>
+
+        <div class="callout reveal">
+            <strong>Business insight:</strong>
+            The shop owner may consider stocking more school bags,
+            but should also check profit, stock availability and customer demand
+            before making a decision.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TOOLS -->
+<section class="section section-light" id="tools">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-tag">04 / TOOLS & TECHNOLOGY</span>
+            <h2>Tools You Will <span>Learn.</span></h2>
+            <p>
+                Each tool has a different purpose. Together, they help
+                us complete the data analysis process.
+            </p>
+        </div>
+
+
+        <div class="tools-grid">
+
+            <article class="tool-card reveal">
+                <div class="tool-icon excel">
+                    <i class="fa-solid fa-file-excel"></i>
+                </div>
+                <h3>Microsoft Excel</h3>
+                <p>
+                    Organize information in rows and columns,
+                    calculate totals and create charts.
+                </p>
+                <span>Example: Monthly expense calculations.</span>
+            </article>
+
+
+            <article class="tool-card reveal">
+                <div class="tool-icon python">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <h3>Python</h3>
+                <p>
+                    A programming language used to automate tasks
+                    and analyze larger datasets.
+                </p>
+                <span>Example: Automatically calculate thousands of sales records.</span>
+            </article>
+
+
+            <article class="tool-card reveal">
+                <div class="tool-icon numpy">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3>NumPy</h3>
+                <p>
+                    A Python library used for numerical calculations
+                    and working with arrays of numbers.
+                </p>
+                <span>Example: Calculate average student marks.</span>
+            </article>
+
+
+            <article class="tool-card reveal">
+                <div class="tool-icon pandas">
+                    <i class="fa-solid fa-table"></i>
+                </div>
+                <h3>Pandas</h3>
+                <p>
+                    Organize, filter, clean and analyze data
+                    in table format.
+                </p>
+                <span>Example: Find customers who spent more than ₹5,000.</span>
+            </article>
+
+
+            <article class="tool-card reveal">
+                <div class="tool-icon matplotlib">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3>Matplotlib</h3>
+                <p>
+                    Create graphs and charts to understand
+                    patterns in information.
+                </p>
+                <span>Example: Compare monthly sales using a bar chart.</span>
+            </article>
+
+
+            <article class="tool-card reveal">
+                <div class="tool-icon mysql">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h3>SQL & MySQL</h3>
+                <p>
+                    Store information in databases and retrieve
+                    specific records using SQL queries.
+                </p>
+                <span>Example: Find customer orders from a database.</span>
+            </article>
+
+
+            <article class="tool-card reveal">
+                <div class="tool-icon powerbi">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <h3>Power BI</h3>
+                <p>
+                    Build interactive dashboards and reports
+                    to communicate business information.
+                </p>
+                <span>Example: View sales performance on one dashboard.</span>
+            </article>
+
+        </div>
+
+        <div class="process-note reveal">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p>
+                No previous knowledge of these tools is required.
+                The course introduces them step by step.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COURSE MODULES -->
+<section class="section" id="course">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-tag">05 / LEARNING PATH</span>
+            <h2>Your Data Analysis <span>Learning Journey.</span></h2>
+            <p>
+                Start with the fundamentals and gradually move towards
+                practical analysis and reporting.
+            </p>
+        </div>
+
+
+        <div class="course-grid">
+
+            <div class="course-card reveal">
+                <span>MODULE 01</span>
+                <h3>Data & Excel Basics</h3>
+                <p>
+                    Introduction to data, rows, columns, data types,
+                    formulas, sorting, filtering, charts and PivotTables.
+                </p>
+            </div>
+
+            <div class="course-card reveal">
+                <span>MODULE 02</span>
+                <h3>Python Fundamentals</h3>
+                <p>
+                    Variables, data types, operators, conditions,
+                    loops, lists, dictionaries and functions.
+                </p>
+            </div>
+
+            <div class="course-card reveal">
+                <span>MODULE 03</span>
+                <h3>NumPy & Pandas</h3>
+                <p>
+                    Arrays, DataFrames, reading datasets,
+                    data cleaning, filtering and grouping.
+                </p>
+            </div>
+
+            <div class="course-card reveal">
+                <span>MODULE 04</span>
+                <h3>Data Visualization</h3>
+                <p>
+                    Charts, graphs, labels and visual presentation
+                    using Matplotlib.
+                </p>
+            </div>
+
+            <div class="course-card reveal">
+                <span>MODULE 05</span>
+                <h3>SQL & MySQL</h3>
+                <p>
+                    Database basics, SELECT, WHERE, GROUP BY,
+                    aggregate functions and joins.
+                </p>
+            </div>
+
+            <div class="course-card reveal">
+                <span>MODULE 06</span>
+                <h3>Power BI & Final Project</h3>
+                <p>
+                    Prepare data, create visuals, build reports
+                    and complete a practical analysis project.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STUDENT PROJECT -->
+<section class="section project-section" id="project">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-tag">06 / STUDENT SUCCESS STORY</span>
+            <h2>Learning in Action: <span>A Student Project.</span></h2>
+            <p>
+                See how the tools and concepts of Data Analysis can be
+                combined in a practical project.
+            </p>
+        </div>
+
+
+        <div class="project-card reveal">
+
+            <div class="project-top">
+
+                <div>
+                    <span class="project-label">COMPLETED STUDENT PROJECT</span>
+
+                    <h3>Sales Data Analysis & Business Insights</h3>
+
+                    <p>
+                        A practical project that explores sample sales records,
+                        analyzes business information and presents findings
+                        through reports, charts and dashboards.
+                    </p>
+                </div>
+
+                <div class="project-symbol">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+
+            </div>
+
+
+            <div class="project-body">
+
+                <div class="project-stats">
+
+                    <div>
+                        <strong>1,000</strong>
+                        <span>Sample Records</span>
+                    </div>
+
+                    <div>
+                        <strong>12</strong>
+                        <span>Data Columns</span>
+                    </div>
+
+                    <div>
+                        <strong>4</strong>
+                        <span>Main Tool Areas</span>
+                    </div>
+
+                </div>
+
+
+                <h3 class="project-subtitle">What did the student work on?</h3>
+
+                <div class="project-tools">
+
+                    <div class="project-tool">
+                        <i class="fa-brands fa-python"></i>
+                        <h4>Python</h4>
+                        <p>
+                            Pandas and NumPy for data preparation and analysis,
+                            with Matplotlib and Seaborn for visual exploration.
+                        </p>
+                    </div>
+
+                    <div class="project-tool">
+                        <i class="fa-solid fa-database"></i>
+                        <h4>MySQL / SQL</h4>
+                        <p>
+                            Imported sales records and used SQL queries
+                            to retrieve and summarize information.
+                        </p>
+                    </div>
+
+                    <div class="project-tool">
+                        <i class="fa-solid fa-file-excel"></i>
+                        <h4>Microsoft Excel</h4>
+                        <p>
+                            Prepared summary sheets, key performance
+                            indicators and charts in a dashboard workbook.
+                        </p>
+                    </div>
+
+                    <div class="project-tool">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <h4>Power BI</h4>
+                        <p>
+                            Prepared a dashboard development guide covering
+                            visuals, slicers and DAX measures.
+                        </p>
+                    </div>
+
+                    <div class="project-tool">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h4>Business Insights</h4>
+                        <p>
+                            Explored sales, profit, products and regional
+                            performance to understand business information.
+                        </p>
+                    </div>
+
+                    <div class="project-tool">
+                        <i class="fa-solid fa-file-pdf"></i>
+                        <h4>Project Report</h4>
+                        <p>
+                            Prepared final project documentation
+                            in PDF and DOCX formats.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="project-message">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <h4>What does this project demonstrate?</h4>
+                        <p>
+                            Students can apply different tools together
+                            to solve a business-related question.
+                            They learn to organize data, analyze information,
+                            discover patterns and communicate their findings.
+                        </p>
+                    </div>
+                </div>
+
+
+                <a
+                    href="https://github.com/chithraparthiv332/Sales-Data-Analysis-and-Business-Insights"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary github-btn"
+                >
+                    <i class="fa-brands fa-github"></i>
+                    Explore Student Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
+                <p class="project-note">
+                    Note: The repository uses synthetic sample data for
+                    educational practice, not real company or customer data.
+                    Its Power BI material is a development guide, not a
+                    completed PBIX dashboard file.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CAREER SCOPE -->
+<section class="section dark-section" id="careers">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-tag">07 / CAREER SCOPE</span>
+            <h2>Where is Data Analysis <span>Used?</span></h2>
+            <p>
+                Data is useful in almost every industry.
+                Organizations use it to understand performance and plan ahead.
+            </p>
+        </div>
+
+
+        <div class="career-grid">
+
+            <div class="career-card reveal">
+                <i class="fa-solid fa-building-columns"></i>
+                <h3>Banking & Finance</h3>
+                <p>Transaction analysis, spending patterns and financial reports.</p>
+            </div>
+
+            <div class="career-card reveal">
+                <i class="fa-solid fa-hospital"></i>
+                <h3>Healthcare</h3>
+                <p>Patient appointments, waiting times and hospital operations.</p>
+            </div>
+
+            <div class="career-card reveal">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Retail & E-commerce</h3>
+                <p>Product sales, customer preferences and demand trends.</p>
+            </div>
+
+            <div class="career-card reveal">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Education</h3>
+                <p>Student attendance, marks and course performance.</p>
+            </div>
+
+            <div class="career-card reveal">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h3>Marketing</h3>
+                <p>Campaign performance, website visits and customer engagement.</p>
+            </div>
+
+            <div class="career-card reveal">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Logistics</h3>
+                <p>Delivery times, transport costs and order volumes.</p>
+            </div>
+
+        </div>
+
+
+        <div class="career-roles reveal">
+            <h3>Related Career Opportunities</h3>
+
+            <div class="role-tags">
+                <span>Junior Data Analyst</span>
+                <span>Reporting Analyst</span>
+                <span>MIS Executive</span>
+                <span>Business Intelligence Analyst</span>
+            </div>
+
+            <p>
+                Job requirements vary by employer. Practical projects,
+                communication skills, problem-solving and relevant experience
+                are important alongside course learning.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FAQ -->
+<section class="section" id="faq">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span class="section-tag">08 / FAQ</span>
+            <h2>Frequently Asked <span>Questions.</span></h2>
+            <p>Some common questions before starting the course.</p>
+        </div>
+
+
+        <div class="faq-container reveal">
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can a Commerce or Arts student learn Data Analysis?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    Yes. Students from non-IT backgrounds can begin with
+                    basic computer skills, simple calculations and spreadsheets.
+                    Programming can be introduced gradually.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do I need to know Python before joining?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    No. Python fundamentals are included in the learning path.
+                    You will start with the basics and gradually learn how
+                    Python is used for data analysis.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do I need advanced mathematics?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    Advanced mathematics is not required to begin.
+                    Basic arithmetic, percentages, averages and logical thinking
+                    are useful starting points.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Will I work on practical projects?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    Practical exercises and projects help you apply what you learn.
+                    The student project featured on this page is an example
+                    of how multiple tools can be used together.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Does completing this course guarantee a job?
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    No course can guarantee employment. Practical skills,
+                    project experience, communication and employer requirements
+                    all play an important role.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="final-cta">
+
+    <div class="container reveal">
+
+        <span>YOUR LEARNING JOURNEY STARTS HERE</span>
+
+        <h2>
+            You don't need to be an IT expert
+            to start learning Data Analysis.
+        </h2>
+
+        <p>
+            Start with simple concepts. Learn the tools.
+            Practise with data. Discover insights.
+        </p>
+
+        <a href="#home" class="btn btn-primary">
+            Back to Top <i class="fa-solid fa-arrow-up"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="container">
+        <p>
+            © <span id="year"></span> DATAFLOW |
+            Beginner-Friendly Data Analysis Course Introduction
+        </p>
+    </div>
+</footer>
+
+
+<script src="myscript.js"></script>
+
+</body>
+</html>
